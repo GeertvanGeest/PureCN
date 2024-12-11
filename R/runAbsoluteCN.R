@@ -591,9 +591,9 @@ runAbsoluteCN <- function(normal.coverage.file = NULL,
     seg <- do.call(fun.segmentation,
             .checkArgs(args.segmentation, "segmentation"))
 
-    if (!is.null(seg.file)) {
-        seg <- .fixAllosomeSegmentation(sex, seg)
-    }
+    # if (!is.null(seg.file)) {
+    #     seg <- .fixAllosomeSegmentation(sex, seg)
+    # }
 
     if (speedup.heuristics > 1) {
         ds <- .getSizeDomState(seg)
